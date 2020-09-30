@@ -34,10 +34,10 @@ library("ggplot2")
 #### GenNonSeaData function generates nonseasonal data ####
 #dist <- "Normal"
 GenNonSeaData <- function(n,dist,percent){
-  if(dist == "Chisq"){
+  if(dist == "Gamma"){
     at <- rchisq(n,df =1)
   }else if (dist == "Normal"){
-    at <- rnorm(n,mean = 0, sd= 1)
+    at <- rnorm(n, mean = 50, sd= 2)
   }else{
     print("Invalid input of dist parameter!")
   }
