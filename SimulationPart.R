@@ -37,7 +37,7 @@ GenNonSeaData <- function(n,dist,percent){
   if(dist == "Chisq"){
     at <- rchisq(n,df =1)
   }else if (dist == "Normal"){
-    at <- rnorm(n,mean = 10, sd= 3)
+    at <- rnorm(n,mean = 40, sd= 5)
   }else{
     print("Invalid input of dist parameter!")
   }
